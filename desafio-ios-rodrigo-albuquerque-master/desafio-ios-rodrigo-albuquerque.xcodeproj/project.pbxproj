@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		167D32D6243E7E450083AEF6 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D32D5243E7E450083AEF6 /* ImageSize.swift */; };
+		167D32D8243EA3950083AEF6 /* ComicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D32D7243EA3950083AEF6 /* ComicResponse.swift */; };
+		167D32DA243EA7C50083AEF6 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D32D9243EA7C50083AEF6 /* Thumbnail.swift */; };
+		167D32DD243EB1FB0083AEF6 /* portrait_fantastic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 167D32DC243EB1FB0083AEF6 /* portrait_fantastic.jpg */; };
+		167DAFFE243D42C4006089E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DAFFD243D42C4006089E1 /* MainViewController.swift */; };
+		167DB003243D45FF006089E1 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB002243D45FF006089E1 /* CharacterTableViewCell.swift */; };
+		167DB005243D4AD1006089E1 /* standard_medium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 167DB004243D4AD1006089E1 /* standard_medium.jpg */; };
+		167DB007243D57A2006089E1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB006243D57A2006089E1 /* MainCoordinator.swift */; };
+		167DB009243D58CE006089E1 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB008243D58CE006089E1 /* Storyboarded.swift */; };
+		167DB00B243D5B6B006089E1 /* CharactersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB00A243D5B6B006089E1 /* CharactersDetailsViewController.swift */; };
+		167DB00D243D5E1D006089E1 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB00C243D5E1D006089E1 /* CharacterModel.swift */; };
+		167DB00F243D72D5006089E1 /* ComicsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB00E243D72D5006089E1 /* ComicsDetailsViewController.swift */; };
+		168C67772451213200D1E4B4 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C67762451213200D1E4B4 /* Pagination.swift */; };
+		169522DC243BE6700015DB39 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169522DB243BE6700015DB39 /* Service.swift */; };
+		169522DE243BF7F20015DB39 /* String+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169522DD243BF7F20015DB39 /* String+Hashing.swift */; };
+		169522E3243C2D8C0015DB39 /* URLSession+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169522E2243C2D8C0015DB39 /* URLSession+extension.swift */; };
+		169522E5243C2DC20015DB39 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169522E4243C2DC20015DB39 /* Result.swift */; };
+		169522E7243C35EA0015DB39 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169522E6243C35EA0015DB39 /* Token.swift */; };
+		16A7BC752446BD2E00741529 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 16A7BC742446BD2E00741529 /* readme.md */; };
+		16CA5044243BC20C00F3B99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CA5043243BC20C00F3B99A /* AppDelegate.swift */; };
+		16CA5046243BC20C00F3B99A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CA5045243BC20C00F3B99A /* SceneDelegate.swift */; };
+		16CA504B243BC20C00F3B99A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CA5049243BC20C00F3B99A /* Main.storyboard */; };
+		16CA504D243BC20D00F3B99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CA504C243BC20D00F3B99A /* Assets.xcassets */; };
+		16CA5050243BC20D00F3B99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CA504E243BC20D00F3B99A /* LaunchScreen.storyboard */; };
+		16CA505B243BC20D00F3B99A /* desafio_ios_rodrigo_albuquerqueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CA505A243BC20D00F3B99A /* desafio_ios_rodrigo_albuquerqueTests.swift */; };
+		16CA5069243BDC3A00F3B99A /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CA5068243BDC3A00F3B99A /* AppSettings.swift */; };
+		16CA506C243BDDCD00F3B99A /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CA506B243BDDCD00F3B99A /* CharacterResponse.swift */; };
+		16CE630C244A6F4900B29BED /* ApiRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE630B244A6F4900B29BED /* ApiRoute.swift */; };
+		313903DC2477689700B11423 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 313903DB2477689600B11423 /* logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16CA5057243BC20D00F3B99A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16CA5038243BC20C00F3B99A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16CA503F243BC20C00F3B99A;
+			remoteInfo = "desafio-ios-juliano-dziadzio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		167D32D5243E7E450083AEF6 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
+		167D32D7243EA3950083AEF6 /* ComicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicResponse.swift; sourceTree = "<group>"; };
+		167D32D9243EA7C50083AEF6 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		167D32DC243EB1FB0083AEF6 /* portrait_fantastic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portrait_fantastic.jpg; sourceTree = "<group>"; };
+		167DAFFD243D42C4006089E1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		167DB002243D45FF006089E1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		167DB004243D4AD1006089E1 /* standard_medium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = standard_medium.jpg; sourceTree = "<group>"; };
+		167DB006243D57A2006089E1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		167DB008243D58CE006089E1 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		167DB00A243D5B6B006089E1 /* CharactersDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewController.swift; sourceTree = "<group>"; };
+		167DB00C243D5E1D006089E1 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		167DB00E243D72D5006089E1 /* ComicsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsDetailsViewController.swift; sourceTree = "<group>"; };
+		168C67762451213200D1E4B4 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		169522DB243BE6700015DB39 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		169522DD243BF7F20015DB39 /* String+Hashing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hashing.swift"; sourceTree = "<group>"; };
+		169522E2243C2D8C0015DB39 /* URLSession+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+extension.swift"; sourceTree = "<group>"; };
+		169522E4243C2DC20015DB39 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		169522E6243C35EA0015DB39 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		16A7BC742446BD2E00741529 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		16CA5040243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-rodrigo-albuquerque.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CA5043243BC20C00F3B99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16CA5045243BC20C00F3B99A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16CA504A243BC20C00F3B99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16CA504C243BC20D00F3B99A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16CA504F243BC20D00F3B99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16CA5051243BC20D00F3B99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CA5056243BC20D00F3B99A /* desafio-ios-rodrigo-albuquerqueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-rodrigo-albuquerqueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CA505A243BC20D00F3B99A /* desafio_ios_rodrigo_albuquerqueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_rodrigo_albuquerqueTests.swift; sourceTree = "<group>"; };
+		16CA505C243BC20D00F3B99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CA5068243BDC3A00F3B99A /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		16CA506B243BDDCD00F3B99A /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		16CE630B244A6F4900B29BED /* ApiRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoute.swift; sourceTree = "<group>"; };
+		313903DB2477689600B11423 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets.xcassets/logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16CA503D243BC20C00F3B99A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CA5053243BC20D00F3B99A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		167D32DB243EAD770083AEF6 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				16CA506B243BDDCD00F3B99A /* CharacterResponse.swift */,
+				167D32D7243EA3950083AEF6 /* ComicResponse.swift */,
+				167D32D9243EA7C50083AEF6 /* Thumbnail.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		167DAFF9243D3E94006089E1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				16CA5043243BC20C00F3B99A /* AppDelegate.swift */,
+				16CA5045243BC20C00F3B99A /* SceneDelegate.swift */,
+				16CA5068243BDC3A00F3B99A /* AppSettings.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		167DAFFF243D45CB006089E1 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				167DB000243D45CF006089E1 /* cells */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		167DB000243D45CF006089E1 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				167DB002243D45FF006089E1 /* CharacterTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		169522E1243C2D770015DB39 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				167DB008243D58CE006089E1 /* Storyboarded.swift */,
+				169522DD243BF7F20015DB39 /* String+Hashing.swift */,
+				169522E2243C2D8C0015DB39 /* URLSession+extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		16CA5037243BC20C00F3B99A = {
+			isa = PBXGroup;
+			children = (
+				16A7BC742446BD2E00741529 /* readme.md */,
+				16CA5042243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque */,
+				16CA5059243BC20D00F3B99A /* desafio-ios-rodrigo-albuquerqueTests */,
+				16CA5041243BC20C00F3B99A /* Products */,
+				FAF106D299DCCF86102C34E9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		16CA5041243BC20C00F3B99A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16CA5040243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque.app */,
+				16CA5056243BC20D00F3B99A /* desafio-ios-rodrigo-albuquerqueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16CA5042243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque */ = {
+			isa = PBXGroup;
+			children = (
+				167DAFFF243D45CB006089E1 /* views */,
+				167DAFF9243D3E94006089E1 /* App */,
+				169522E1243C2D770015DB39 /* extensions */,
+				16CA506D243BDED300F3B99A /* API */,
+				16CA506A243BDC9600F3B99A /* Controllers */,
+				16CA5067243BD76100F3B99A /* Models */,
+				16CA5066243BC33800F3B99A /* Service */,
+				16CA5065243BC22000F3B99A /* Coordinator */,
+				16CA5049243BC20C00F3B99A /* Main.storyboard */,
+				16CA504C243BC20D00F3B99A /* Assets.xcassets */,
+				313903DB2477689600B11423 /* logo.png */,
+				167D32DC243EB1FB0083AEF6 /* portrait_fantastic.jpg */,
+				167DB004243D4AD1006089E1 /* standard_medium.jpg */,
+				16CA504E243BC20D00F3B99A /* LaunchScreen.storyboard */,
+				16CA5051243BC20D00F3B99A /* Info.plist */,
+			);
+			path = "desafio-ios-rodrigo-albuquerque";
+			sourceTree = "<group>";
+		};
+		16CA5059243BC20D00F3B99A /* desafio-ios-rodrigo-albuquerqueTests */ = {
+			isa = PBXGroup;
+			children = (
+				16CA505A243BC20D00F3B99A /* desafio_ios_rodrigo_albuquerqueTests.swift */,
+				16CA505C243BC20D00F3B99A /* Info.plist */,
+			);
+			path = "desafio-ios-rodrigo-albuquerqueTests";
+			sourceTree = "<group>";
+		};
+		16CA5065243BC22000F3B99A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				167DB006243D57A2006089E1 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		16CA5066243BC33800F3B99A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				169522DB243BE6700015DB39 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		16CA5067243BD76100F3B99A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				167D32DB243EAD770083AEF6 /* Responses */,
+				169522E4243C2DC20015DB39 /* Result.swift */,
+				169522E6243C35EA0015DB39 /* Token.swift */,
+				167DB00C243D5E1D006089E1 /* CharacterModel.swift */,
+				167D32D5243E7E450083AEF6 /* ImageSize.swift */,
+				168C67762451213200D1E4B4 /* Pagination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16CA506A243BDC9600F3B99A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				167DAFFD243D42C4006089E1 /* MainViewController.swift */,
+				167DB00A243D5B6B006089E1 /* CharactersDetailsViewController.swift */,
+				167DB00E243D72D5006089E1 /* ComicsDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16CA506D243BDED300F3B99A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				16CE630B244A6F4900B29BED /* ApiRoute.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAF106D299DCCF86102C34E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16CA503F243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CA505F243BC20D00F3B99A /* Build configuration list for PBXNativeTarget "desafio-ios-rodrigo-albuquerque" */;
+			buildPhases = (
+				16CA503C243BC20C00F3B99A /* Sources */,
+				16CA503D243BC20C00F3B99A /* Frameworks */,
+				16CA503E243BC20C00F3B99A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "desafio-ios-rodrigo-albuquerque";
+			productName = "desafio-ios-juliano-dziadzio";
+			productReference = 16CA5040243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16CA5055243BC20D00F3B99A /* desafio-ios-rodrigo-albuquerqueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CA5062243BC20D00F3B99A /* Build configuration list for PBXNativeTarget "desafio-ios-rodrigo-albuquerqueTests" */;
+			buildPhases = (
+				16CA5052243BC20D00F3B99A /* Sources */,
+				16CA5053243BC20D00F3B99A /* Frameworks */,
+				16CA5054243BC20D00F3B99A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16CA5058243BC20D00F3B99A /* PBXTargetDependency */,
+			);
+			name = "desafio-ios-rodrigo-albuquerqueTests";
+			productName = "desafio-ios-juliano-dziadzioTests";
+			productReference = 16CA5056243BC20D00F3B99A /* desafio-ios-rodrigo-albuquerqueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16CA5038243BC20C00F3B99A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "juliano jose dziadzio";
+				TargetAttributes = {
+					16CA503F243BC20C00F3B99A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					16CA5055243BC20D00F3B99A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 16CA503F243BC20C00F3B99A;
+					};
+				};
+			};
+			buildConfigurationList = 16CA503B243BC20C00F3B99A /* Build configuration list for PBXProject "desafio-ios-rodrigo-albuquerque" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16CA5037243BC20C00F3B99A;
+			productRefGroup = 16CA5041243BC20C00F3B99A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16CA503F243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque */,
+				16CA5055243BC20D00F3B99A /* desafio-ios-rodrigo-albuquerqueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16CA503E243BC20C00F3B99A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CA5050243BC20D00F3B99A /* LaunchScreen.storyboard in Resources */,
+				16CA504D243BC20D00F3B99A /* Assets.xcassets in Resources */,
+				167D32DD243EB1FB0083AEF6 /* portrait_fantastic.jpg in Resources */,
+				16CA504B243BC20C00F3B99A /* Main.storyboard in Resources */,
+				313903DC2477689700B11423 /* logo.png in Resources */,
+				16A7BC752446BD2E00741529 /* readme.md in Resources */,
+				167DB005243D4AD1006089E1 /* standard_medium.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CA5054243BC20D00F3B99A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16CA503C243BC20C00F3B99A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169522E5243C2DC20015DB39 /* Result.swift in Sources */,
+				167DB007243D57A2006089E1 /* MainCoordinator.swift in Sources */,
+				167DAFFE243D42C4006089E1 /* MainViewController.swift in Sources */,
+				168C67772451213200D1E4B4 /* Pagination.swift in Sources */,
+				16CA5044243BC20C00F3B99A /* AppDelegate.swift in Sources */,
+				16CA506C243BDDCD00F3B99A /* CharacterResponse.swift in Sources */,
+				167DB009243D58CE006089E1 /* Storyboarded.swift in Sources */,
+				167DB00D243D5E1D006089E1 /* CharacterModel.swift in Sources */,
+				169522DE243BF7F20015DB39 /* String+Hashing.swift in Sources */,
+				167D32D8243EA3950083AEF6 /* ComicResponse.swift in Sources */,
+				169522E7243C35EA0015DB39 /* Token.swift in Sources */,
+				169522E3243C2D8C0015DB39 /* URLSession+extension.swift in Sources */,
+				16CA5069243BDC3A00F3B99A /* AppSettings.swift in Sources */,
+				16CA5046243BC20C00F3B99A /* SceneDelegate.swift in Sources */,
+				167DB00B243D5B6B006089E1 /* CharactersDetailsViewController.swift in Sources */,
+				16CE630C244A6F4900B29BED /* ApiRoute.swift in Sources */,
+				167DB00F243D72D5006089E1 /* ComicsDetailsViewController.swift in Sources */,
+				167D32D6243E7E450083AEF6 /* ImageSize.swift in Sources */,
+				167D32DA243EA7C50083AEF6 /* Thumbnail.swift in Sources */,
+				169522DC243BE6700015DB39 /* Service.swift in Sources */,
+				167DB003243D45FF006089E1 /* CharacterTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CA5052243BC20D00F3B99A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CA505B243BC20D00F3B99A /* desafio_ios_rodrigo_albuquerqueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16CA5058243BC20D00F3B99A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16CA503F243BC20C00F3B99A /* desafio-ios-rodrigo-albuquerque */;
+			targetProxy = 16CA5057243BC20D00F3B99A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16CA5049243BC20C00F3B99A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16CA504A243BC20C00F3B99A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16CA504E243BC20D00F3B99A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16CA504F243BC20D00F3B99A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16CA505D243BC20D00F3B99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_PUBLIC_KEY = a8f31048169f28f8a66df7b43b32e0c8;
+				BASE_URL = "https://gateway.marvel.com:443/v1/public/";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16CA505E243BC20D00F3B99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_PUBLIC_KEY = a8f31048169f28f8a66df7b43b32e0c8;
+				BASE_URL = "https://gateway.marvel.com:443/v1/public/";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16CA5060243BC20D00F3B99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_PRIVATE_KEY = 244626d3f1793e197d7f2fcf96aba2237ab56c64;
+				API_PUBLIC_KEY = 4c1beeb33073e49853432edbc8355c05;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "desafio-ios-rodrigo-albuquerque/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rpa.desafio-ios-rodrigo-albuquerque";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		16CA5061243BC20D00F3B99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_PRIVATE_KEY = 244626d3f1793e197d7f2fcf96aba2237ab56c64;
+				API_PUBLIC_KEY = 4c1beeb33073e49853432edbc8355c05;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "desafio-ios-rodrigo-albuquerque/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rpa.desafio-ios-rodrigo-albuquerque";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		16CA5063243BC20D00F3B99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "desafio-ios-rodrigo-albuquerqueTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rpa.desafio-ios-rodrigo-albuquerqueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-rodrigo-albuquerque.app/desafio-ios-rodrigo-albuquerque";
+			};
+			name = Debug;
+		};
+		16CA5064243BC20D00F3B99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "desafio-ios-rodrigo-albuquerqueTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.rpa.desafio-ios-rodrigo-albuquerqueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-rodrigo-albuquerque.app/desafio-ios-rodrigo-albuquerque";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16CA503B243BC20C00F3B99A /* Build configuration list for PBXProject "desafio-ios-rodrigo-albuquerque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CA505D243BC20D00F3B99A /* Debug */,
+				16CA505E243BC20D00F3B99A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CA505F243BC20D00F3B99A /* Build configuration list for PBXNativeTarget "desafio-ios-rodrigo-albuquerque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CA5060243BC20D00F3B99A /* Debug */,
+				16CA5061243BC20D00F3B99A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CA5062243BC20D00F3B99A /* Build configuration list for PBXNativeTarget "desafio-ios-rodrigo-albuquerqueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CA5063243BC20D00F3B99A /* Debug */,
+				16CA5064243BC20D00F3B99A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16CA5038243BC20C00F3B99A /* Project object */;
+}
