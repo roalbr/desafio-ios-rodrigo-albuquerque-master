@@ -58,9 +58,3 @@ MVVM (Movel-View-ViewModel) with Coordinator
 
 ### Rodrigo Prado de Albuquerque
 #### ralbuquerque.info@gmail.com
-
-
-
-
-
-
