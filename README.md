@@ -1,6 +1,6 @@
 # Lista de Personagens da Marvel 
 
-Aplicativo para teste de desenvolvimento.
+Aplicativo para teste de desenvolvimento consumindo a api:  [marvel api](https://developer.marvel.com/docs) 
 
 ## Objetivo: 
 
@@ -63,4 +63,4 @@ MVVM (Movel-View-ViewModel) with Coordinator
 
 
 
-This project show how to consume [marvel api](https://developer.marvel.com/docs) and list characters and their respective comics.
+
